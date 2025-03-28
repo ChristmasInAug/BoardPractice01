@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 이걸로 바꿔줘야 함 
+    <link rel="stylesheet" th:href="@{/css/styles.css}">-->
+   <!-- 정적 HTML 테스트용 -->
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>자유 게시판</h1>
+        <button class="new-post-btn"><a href="insert_page.html">새글 작성</a></button>
+    </header>
+
+    <table class="board-table">
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>이름</th>
+                <th>작성일</th>
+                <th>조회수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>23</td>
+                <td><a href="read_page.html">광나루한강시민공원 주차장요금 감면 관련</a></td>
+                <td>수정</td>
+                <td>2021-04-28</td>
+                <td>28</td>
+            </tr>
+            <!-- 다른 게시글 항목들도 여기에 추가됩니다 -->
+        </tbody>
+    </table>
+
+    <footer>
+        <p>1 page / 2 pages</p>
+        <button class="page-btn">다음</button>
+    </footer>
+</body>
+</html>
