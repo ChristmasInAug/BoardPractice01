@@ -1,4 +1,4 @@
-package BoardPractice.BoardPractice01;
+package com.wizfactory.boardpractice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
