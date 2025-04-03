@@ -1,3 +1,4 @@
+
 package BoardPractice.BoardPractice01;
 
 import org.junit.jupiter.api.Test;
@@ -11,3 +12,4 @@ class BoardPractice01ApplicationTests {
 	}
 
 }
+
