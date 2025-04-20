@@ -12,26 +12,23 @@
     </header>
 
     <form class="post-form">
-        <input type="hidden" id="post-id" name="post-id" value="23"> <!-- 글 번호 -->
+        <input type="hidden" id="post-id" name="post-id"> <!-- 글 번호 -->
         
         <label for="name">작성자 이름</label>
-        <input type="text" id="name" name="name" value="수정" required>
+        <input type="text" id="name" name="name" required>
 
         <label for="title">제목</label>
-        <input type="text" id="title" name="title" value="광나루한강시민공원 주차장요금 감면 관련" required>
+        <input type="text" id="title" name="title" required>
 
         <label for="content">내용</label>
-        <textarea id="content" name="content" rows="4" required>
-            서울시 광나루한강시민공원 주차장 요금이 감면될 예정입니다. 이에 대한 세부 사항을 안내드립니다. 
-            공공시설의 주차요금이 인상될 가능성이 있어 이에 대한 대비가 필요합니다.
-            자세한 사항은 아래 내용을 참고해 주세요.
-        </textarea>
+        <textarea id="content" name="content" rows="4" required></textarea>
 
         <button type="submit" class="submit-btn">수정 저장</button>
     </form>
 
     <footer>
-        <button onclick="window.location.href='read_page.html'" class="back-btn">취소</button>
+        <button id="cancel-btn" class="back-btn">취소</button>
     </footer>
+    <script src="/js/board.js"></script>
 </body>
 </html>

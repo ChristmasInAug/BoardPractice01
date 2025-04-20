@@ -37,6 +37,8 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	runtimeOnly 'com.h2database:h2'
 	implementation 'jakarta.annotation:jakarta.annotation-api:2.1.1'
+	implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+	
 }
 
 tasks.named('test') {
