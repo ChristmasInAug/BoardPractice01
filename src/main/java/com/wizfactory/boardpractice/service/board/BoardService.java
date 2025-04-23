@@ -11,6 +11,7 @@ public interface BoardService {
 	Board createBoard(Board board);
 	Board updateBoard(long id, Board updateBoard);
 	boolean deleteBoard(long id);
+	void increaseViewCount(long id);
 
 	
 }

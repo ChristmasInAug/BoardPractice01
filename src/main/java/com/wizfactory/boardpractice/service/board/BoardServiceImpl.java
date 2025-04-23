@@ -73,4 +73,11 @@ public class BoardServiceImpl implements BoardService {
 	    boardRepository.deleteById(id);
 	    return true;
 	}
+	
+	@Override
+	public void increaseViewCount(long id) {
+	    Board board = boardRepository.findById(id).orElseThrow(() -> new RuntimeException("게시글 없음"));
+	    board.setViewCount(board.getViewCount() + 1);
+	    boardRepository.save(board);
+	}
 };

@@ -72,4 +72,10 @@ public class BoardController {
 	    }
 	}
 	
+	@PutMapping("/board/viewcount/{id}")
+	public ResponseEntity<Void> updateViewCount(@PathVariable("id") long id) {
+	    boardService.increaseViewCount(id);
+	    return ResponseEntity.ok().build(); // 내용 없이 200 OK
+	} 
+	
 }

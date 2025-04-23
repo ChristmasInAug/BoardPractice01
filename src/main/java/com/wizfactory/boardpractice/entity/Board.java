@@ -23,11 +23,12 @@ public class Board {
 	@Column(name = "title")
 	private String title;
 	
-	@Column(name = "content")
+	@Column(name = "content", columnDefinition = "TEXT")
 	private String content;
 	
 	@Column(name = "writer")
 	private String writer;
+	
 	
     public Long getId() {
     	return this.id;
@@ -42,7 +43,6 @@ public class Board {
 		return this.writer;
 	}
 	
-
 	public void setTitle(String title) {
 	    this.title = title;
 	}
@@ -54,6 +54,7 @@ public class Board {
 	public void setUpdatedAt(LocalDateTime updatedAt) {
 	    this.updatedAt = updatedAt;
 	}
+	
 	
 	
     @Column(name = "created_at")
@@ -70,7 +71,9 @@ public class Board {
     public int getViewCount() {
     	return this.viewCount;
     }
-    
+    public void setViewCount(int viewCount) {
+        this.viewCount = viewCount;
+    }
     public LocalDateTime getCreatedAt() {
     	return this.createdAt;
     }
@@ -78,5 +81,6 @@ public class Board {
     public LocalDateTime getUpdatedAt() {
     	return this.updatedAt;
     }
+
 	
 };
